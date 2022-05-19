@@ -16,6 +16,12 @@ body {
     transform: translate(-50%, 0);
 }
 
+.fixed-alert{
+  position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 #candle-group{
     display:none;
 }
