@@ -18,16 +18,24 @@ body {
     width:85% !important;
   }
   .image-today{
+    margin-top:10%;
     width:75vw !important;
   }
+  .happy{
+    font-size: 30pt !important;
+  }
   .birth{
-    font-size: 75pt !important;
+    font-size: 56pt !important;
   }
   .ke{
     margin-top: -35px !important;
   }
   #greeting{
-    margin-top:35%;
+    margin-top:20%;
+  }
+  h1{
+    width: 10em !important;
+    font-size: 1.8em !important;
   }
 }
 .happy{
@@ -47,7 +55,7 @@ body {
 .ke{
   margin-top: -65px;
   font-family: 'Commissioner', sans-serif;
-  font-size: 35pt !important;
+  font-size: 20pt;
   text-shadow: 4px 8px 4px black;
 }
 
