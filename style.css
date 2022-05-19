@@ -1,18 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@font-face{
+  font-family: 'Fall in Love';
+  src: url('fonts/Fall\ in\ love.ttf');
+}
+
 body {
-  background-color: #333;
+  background-color: black;
 }
 
 @media screen and (max-width:768px) {
   .fixed-center-card{
     width:85% !important;
+  }
+  .fixed-alert{
+    width:85% !important;
+  }
+  .image-today{
+    width:75vw !important;
+  }
+  .birth{
+    font-size: 75pt !important;
+  }
+  .ke{
+    margin-top: -35px !important;
+  }
+  #greeting{
+    margin-top:35%;
+  }
 }
-.fixed-alert{
-  width:85% !important;
-}
+.happy{
+  font-family: 'Commissioner', sans-serif;
+  font-weight: bold;
+  font-size: 45pt !important;
 }
 
+.birth{
+  margin-top: -20px;
+  font-family: 'Fall in Love';
+  font-size: 125pt;
+  color: #ead728 !important;
+  text-shadow: 4px 8px 4px black;
+}
+
+.ke{
+  margin-top: -65px;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 35pt !important;
+  text-shadow: 4px 8px 4px black;
+}
+
+.mpel{
+  font-family: 'Commissioner', sans-serif;
+  text-shadow: 1px 1px 2px black;
+  font-size: 45pt !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ead728;
+}
+
+.lyric{
+  font-family: 'Commissioner', sans-serif;
+  line-height: 15pt;
+}
+
+.btn-width{
+  width:8rem;
+}
 
 .light{
     background-color: #1e1934;
@@ -31,7 +86,15 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
 }
-
+#today{
+  display: none;
+  position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.image-today{
+  width:25vw;
+}
 #candle-group{
     display:none;
 }
@@ -43,6 +106,7 @@ body {
 
 #present{
     display: none;
+    font-family: 'Commissioner', sans-serif;
 }
 #alerts{
     display: none;
@@ -58,8 +122,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 100;
-  font-family: 'Lobster', cursive;
-  letter-spacing: 0.1em;
+  font-family: 'Commissioner', sans-serif;
   color: white;
   text-shadow: 0 0 20px black;
   opacity: 0.8;
@@ -78,7 +141,7 @@ h1 {
 #candle {
   position: absolute;
   left: calc(50% - .75em);
-  bottom: 35%;
+  bottom: 30%;
   width: 1.5em;
   height: 10em;
   overflow: hidden;
