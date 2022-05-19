@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="vendor/confetti/confetti.js"></script>
 </head>
 
 <body>
@@ -32,8 +33,8 @@
         </div>
     </div>
     <div id="present" class="container">
-        <div id="alerts" class="alert alert-danger mx-auto mt-3" style="width:50vw" role="alert">
-            P
+        <div id="alerts" class="alert alert-primary fixed-alert" style="width:50vw" role="alert">
+            alert
         </div>
         <div class="card fixed-center-card w-50">
             <div class="card-body">
@@ -53,14 +54,20 @@
             </div>
         </div>
     </div>
-    <div id="greeting" class="navbar fixed-top">
+    <div id="greeting" class="container navbar fixed-top">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top:25vh">
+            <span class="fs-1 text-white">Happy Birthday Kak Mpel Yang Ke 1148</span>
+            <span class="fs-5 text-white">btw hadiahnya gk ada hehe..</span>
+        </div>
+    </div>
+    <!-- <div id="greeting" class="navbar fixed-top">
         <div class="container justify-content-center">
             <div class="d-flex flex-column justify-content-center align-items-center mt-5">
                 <span class="fs-2 text-white">Happy Birthday</span>
                 <span class="fs-3 text-white">Velary Lusticia</span>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="navbar fixed-bottom">
         <div class="container justify-content-center">
             <div class="row">
@@ -96,35 +103,39 @@
                 no.attr("onclick","no();")
             }
             j++;
-            if(j == 7){
-                $('#alerts').text("CIE TAMBAH TUA")
+            if(j == 5){
+                $('#alerts').text("Hadiahnya didepan mata.. LETS GOOOO")
                 $('#alerts').fadeIn("slow")
-                $('#alerts').delay(1000).fadeOut("slow")
-                j = 0;
+                $('#alerts').delay(500).fadeOut("slow")
+            }
+            if(j == 8){
+                $("#present").delay(500).fadeOut('slow');
+                $("#greeting").delay(1000).fadeIn('slow');
+                $("body").load(startConfetti())
             }
         }
         function no(){
             if(i==0){
                 $('#alerts').text("Kok gk mau mpel?")
                 $('#alerts').fadeIn("slow")
-                $('#alerts').delay(1000).fadeOut("slow")
+                $('#alerts').delay(500).fadeOut("slow")
                 i++;
             }else if(i==1){
                 $('#alerts').text("Ihh kok gk mau sih?")
                 $('#alerts').fadeIn("slow")
-                $('#alerts').delay(1000).fadeOut("slow")
+                $('#alerts').delay(500).fadeOut("slow")
                 i++;
             }else{
                 $('#alerts').text("Yaudah kukasih ke orang lain aja")
                 $('#alerts').fadeIn("slow")
-                $('#alerts').delay(1000).fadeOut("slow")
+                $('#alerts').delay(500).fadeOut("slow")
             }
         }
         function showCandle() {
             $("#turn-on").fadeOut('slow');
             $("body").addClass("light");
             $("#candle-group").delay(1000).fadeIn('slow');
-            $("#greeting").delay(1000).fadeIn('slow');
+            
         }
         function blow() {
             $("#flame").removeClass("burn").addClass("puff");
