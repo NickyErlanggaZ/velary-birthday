@@ -30,6 +30,9 @@ body {
   .ke{
     margin-top: -35px !important;
   }
+  .mpel{
+    font-size: 25pt !important;
+  }
   #greeting{
     margin-top:20%;
   }
@@ -62,7 +65,7 @@ body {
 .mpel{
   font-family: 'Commissioner', sans-serif;
   text-shadow: 1px 1px 2px black;
-  font-size: 45pt !important;
+  font-size: 45pt;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #ead728;
